@@ -28,7 +28,7 @@
   display: none;
 }
 
-@media(prefers-color-scheme:light) {
+@media(prefers-color-scheme: light) {
   :root {
     --main-font: 'IBM Plex mono';
     --main-text-color: #353430;
@@ -45,7 +45,11 @@
     --hover-color: #32312D66;
   }
 
-  .header__decorated-rec {
+  .page.theme_light .header__decorated-rec {
+    display: none;
+  }
+  
+  .page.theme_auto .header__decorated-rec {
     display: none;
   }
 }
