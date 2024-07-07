@@ -53,16 +53,16 @@
 /* ***HEADER*** */
 
 .header {
-  --margin: 20px;
-
   display: grid;
   grid-template-rows: 1fr max-content 1fr;
-  margin: var(--margin);
-  block-size: calc(100vh - (var(--margin)*2));
 }
 
 .decorated-zone {
+  --margin: 20px;
+
   position: relative;
+  margin: var(--margin);
+  block-size: calc(100vh - (var(--margin)*2));
 }
 
 .decorated-zone::before {
@@ -256,13 +256,9 @@
 }
 
 .footer {
-  --margin: 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: var(--margin);
-  block-size: calc(100vh - (var(--margin)*2));
 }
 
 .footer__content {
@@ -305,7 +301,7 @@
 
   /* ***HEADER*** */
 
-  .header {
+  .decorated-zone{
     --margin: 10px;
   }
 
@@ -353,9 +349,5 @@
 
   .gallery__item:not(:last-child) {
     margin-block-end: 5px;
-  }
-
-  .footer {
-    --margin: 10px;
   }
 }
