@@ -3,7 +3,6 @@
 /* ***GENERAL*** */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: fixed var(--bg-color) var(--bg-image) no-repeat center / cover;
   font-family: var(--main-font), sans-serif;
   font-weight: 400;
