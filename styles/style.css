@@ -1,8 +1,9 @@
-/* Основные стили проекта */
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 /* ***GENERAL*** */
 
 .page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: fixed var(--bg-color) var(--bg-image) no-repeat center / cover;
   font-family: var(--main-font), sans-serif;
   font-weight: 400;
@@ -59,10 +60,6 @@
   grid-template-rows: 1fr max-content 1fr;
   margin: var(--margin);
   block-size: calc(100vh - (var(--margin)*2));
-}
-
-.header__indent {
-  margin-block-end: 80px;
 }
 
 .decorated-zone {
@@ -169,7 +166,7 @@
   flex-direction: column;
   gap: 80px;
   padding-inline: 20px;
-  margin-block-end: 80px;
+  margin-block: 80px;
 }
 
 /* ***REASONS*** */
@@ -273,26 +270,6 @@
   text-shadow: var(--text-shadow-footer);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (width <= 768px) {
 
   /* ***HEADER*** */
@@ -317,7 +294,6 @@
   .gallery__list {
     grid-template-rows: 192px 230px 318px;
   }
-
 }
 
 @media (width <= 375px) {
@@ -334,10 +310,6 @@
     --margin: 10px;
   }
 
-  .header__indent {
-    margin-block-end: 50px;
-  }
-    
   .header__description-textbox {
     justify-self: start;
     align-self: center;
@@ -352,6 +324,7 @@
   .main {
     padding-inline: 10px;
     gap: 50px;
+    margin-block-start: 50px;
     margin-block-end: 44px;
   }
 
@@ -386,5 +359,4 @@
   .footer {
     --margin: 10px;
   }
-
 }
